@@ -6,7 +6,7 @@ const tituloElemento = document.getElementById("idTituloElemento");
 const nombreElemento = document.getElementById("idNombreElemento");
 const modal = new bootstrap.Modal(document.getElementById("idModal"), {});
 
-const vericarTipoElemento = function () {
+const verificarTipoElemento = function () {
     let elemento = cmbElemento.value;
     if (elemento != "") {
         modal.show();
@@ -96,7 +96,7 @@ const newInput = function (newElemento) {
 };
 
 buttonCrear.onclick = () => {
-    vericarTipoElemento();
+    verificarTipoElemento();
 };
 
 buttonAddElemento.onclick = () => {
